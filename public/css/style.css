@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* === GLOBAL === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0e0e0e;
+  color: #f0f0f0;
+}
+
+section {
+  padding: 5rem 0;
+  scroll-margin-top: 80px;
+}
+
+h1, h2, h5 {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+p, li, .text-light, .text-white {
+  color: #ccc !important;
+}
+
+ul li::marker {
+  color: #0d6efd;
+}
+
+img {
+  border-radius: 12px;
+}
+
+/* === NAVBAR === */
+.custom-navbar {
+  background-color: rgba(33, 37, 41, 0.322);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.custom-navbar .nav-link {
+  transition: color 0.3s ease, background 0.3s ease;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #6a62df !important;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler i {
+  font-size: 1.25rem;
+}
+
+.dropdown-menu-dark {
+  background-color: rgba(33, 37, 41, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  z-index: 9999;
+  position: absolute;
+  will-change: backdrop-filter;
+}
+
+.dropdown-menu-dark .dropdown-item {
+  color: #fff;
+  transition: ease-in-out 100ms;
+}
+
+.dropdown-menu-dark .dropdown-item:hover {
+  background-color: #ffffff18;
+  transition: ease-in-out 100ms;
+}
+
+/* === COVER === */
+.scroll-arrow {
+  transition: transform 0.3s;
+  animation: bounce 2s infinite;
+}
+
+.scroll-arrow:hover {
+  transform: translateY(5px);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  } 
+  40% {
+    transform: translateY(8px);
+  } 
+  60% {
+    transform: translateY(4px);
+  }
+}
+
+/* === BACKGROUNDS & SECTIONS === */
+.bg-light {
+  background-color: #181818 !important;
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* === FORMS === */
+form input,
+form textarea {
+  background-color: #1a1a2e;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #aaa;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #0d6efd;
+  box-shadow: none;
+}
+
+/* === BUTTONS === */
+.btn-primary {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  background-size: 200%;
+  background-position: left;
+  border: none;
+  color: white;
+  transition: background-position 0.4s ease-in-out, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background-position: right;
+}
+
+.btn-outline-primary {
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.btn-instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-instagram:hover {
+  filter: brightness(1.1);
+}
+
+.btn-discord {
+  background-color: #5865F2;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-discord:hover {
+  background-color: #4e57d1;
+}
+
+.btn-github {
+  background-color: #333;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-github:hover {
+  background-color: #24292e;
+}
+
+/* === CARDS === */
+.card,
+.contact-card,
+.custom-badge {
+  background: rgba(255, 255, 255, 0.034) !important;
+  backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card {
+  background-color: #1e1e2f;
+  color: #ccc;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card {
+  margin-top: 1rem;
+}
+
+/* === FOOTER === */
+.footer-link {
+    color: #6D767E;
+    transition: ease-in-out 100ms;
+}
+
+.footer-link:hover {
+    color: #6d767e80;
+    transition: ease-in-out 100ms;
+}
