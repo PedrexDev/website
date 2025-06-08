@@ -12,6 +12,7 @@ npm i
 ```
 
 This command installs all the libraries that are necessary to run the website.
+Then you just rename the `.example.env` to `.env` and fill in all the necessary data.
 
 ## Usage
 
