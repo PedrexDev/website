@@ -80,28 +80,6 @@ img {
   transition: ease-in-out 100ms;
 }
 
-/* === COVER === */
-.scroll-arrow {
-  transition: transform 0.3s;
-  animation: bounce 2s infinite;
-}
-
-.scroll-arrow:hover {
-  transform: translateY(5px);
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  } 
-  40% {
-    transform: translateY(8px);
-  } 
-  60% {
-    transform: translateY(4px);
-  }
-}
-
 /* === BACKGROUNDS & SECTIONS === */
 .bg-light {
   background-color: #181818 !important;
